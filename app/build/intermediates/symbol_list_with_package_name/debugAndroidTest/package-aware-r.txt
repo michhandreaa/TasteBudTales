@@ -1,0 +1,3 @@
+com.mobdeve.s14.villanueva.adrian.mco.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.mobdeve.s14.villanueva.adrian.mco.ExampleInstrumentedTest" tests="1" failures="0" errors="0" skipped="0" time="0.816" timestamp="2023-10-27T11:26:41" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_XL_API_24(AVD) - 7.0" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="useAppContext" classname="com.mobdeve.s14.villanueva.adrian.mco.ExampleInstrumentedTest" time="0.014" />
+</testsuite>

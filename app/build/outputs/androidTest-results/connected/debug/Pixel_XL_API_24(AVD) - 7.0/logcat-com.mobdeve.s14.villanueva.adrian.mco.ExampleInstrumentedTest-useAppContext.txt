@@ -1,0 +1,2 @@
+10-27 19:26:40.836 20961 20976 I TestRunner: started: useAppContext(com.mobdeve.s14.villanueva.adrian.mco.ExampleInstrumentedTest)
+10-27 19:26:40.838 20961 20976 I TestRunner: finished: useAppContext(com.mobdeve.s14.villanueva.adrian.mco.ExampleInstrumentedTest)

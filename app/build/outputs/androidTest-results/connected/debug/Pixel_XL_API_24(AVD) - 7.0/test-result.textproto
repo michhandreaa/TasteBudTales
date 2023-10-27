@@ -1,0 +1,68 @@
+# 2023-10-27T11:26:41.872Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleInstrumentedTest"
+    test_package: "com.mobdeve.s14.villanueva.adrian.mco"
+    test_method: "useAppContext"
+    start_time {
+      seconds: 1698406001
+      nanos: 5000000
+    }
+    end_time {
+      seconds: 1698406001
+      nanos: 26000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "D:\\Android studio project files\\MCO\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_XL_API_24(AVD) - 7.0\\logcat-com.mobdeve.s14.villanueva.adrian.mco.ExampleInstrumentedTest-useAppContext.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "D:\\Android studio project files\\MCO\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_XL_API_24(AVD) - 7.0\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "D:\\Android studio project files\\MCO\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_XL_API_24(AVD) - 7.0\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "D:\\Android studio project files\\MCO\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_XL_API_24(AVD) - 7.0\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "D:\\Android studio project files\\MCO\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_XL_API_24(AVD) - 7.0\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

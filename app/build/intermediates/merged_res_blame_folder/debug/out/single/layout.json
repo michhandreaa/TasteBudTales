@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-mergeDebugResources-31:\\layout\\home_signup_page.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-main-34:\\layout\\home_signup_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-mergeDebugResources-31:\\layout\\home_homepage.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-main-34:\\layout\\home_homepage.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-mergeDebugResources-31:\\layout\\home_login.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-main-34:\\layout\\home_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-mergeDebugResources-31:\\layout\\home_item_recipe.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-main-34:\\layout\\home_item_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-mergeDebugResources-31:\\layout\\home_landing_page.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-main-34:\\layout\\home_landing_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-mergeDebugResources-31:\\layout\\home_item_category.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-main-34:\\layout\\home_item_category.xml"
+    },
+    {
+        "merged": "com.mobdeve.s14.villanueva.adrian.mco.app-mergeDebugResources-31:/layout/home_see_all_per_categories_recipes.xml",
+        "source": "com.mobdeve.s14.villanueva.adrian.mco.app-main-34:/layout/home_see_all_per_categories_recipes.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-mergeDebugResources-31:\\layout\\recipe_view.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.0\\com.mobdeve.s14.villanueva.adrian.mco.app-main-34:\\layout\\recipe_view.xml"
+    }
+]
