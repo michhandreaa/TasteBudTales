@@ -42,14 +42,14 @@ class HomepageActivity : AppCompatActivity (){
 
         viewBinding.fabParent.setOnClickListener(View.OnClickListener {
             if (!isAllFabVisible){
-                viewBinding.fabParent.setImageResource(R.drawable.cross_icon)
+                viewBinding.fabParent.setImageResource(R.drawable.icon_close)
                 viewBinding.fabAddIngredient.visibility = View.VISIBLE
                 viewBinding.fabAddRecipe.visibility = View.VISIBLE
                 viewBinding.addIngredientTV.visibility = View.VISIBLE
                 viewBinding.addRecipeTV.visibility = View.VISIBLE
                 isAllFabVisible = true
             }else{
-                viewBinding.fabParent.setImageResource(R.drawable.plus_icon)
+                viewBinding.fabParent.setImageResource(R.drawable.icon_add)
                 viewBinding.fabAddIngredient.visibility = View.GONE
                 viewBinding.fabAddRecipe.visibility = View.GONE
                 viewBinding.addIngredientTV.visibility = View.GONE

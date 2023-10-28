@@ -70,21 +70,15 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/borderConstraint"
-                    android:layout_width="match_parent"
-                    android:layout_height="115dp"
-                    android:background="@color/green">
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/green">
 
                 <ImageView
                     android:id="@+id/profileDetails_pfp"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:shape="oval"
+                    android:paddingBottom="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/profileSettings"
