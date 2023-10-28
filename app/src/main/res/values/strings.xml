@@ -1,34 +1,66 @@
 <resources>
-    <string name="app_name">MOBDEVE_iRecipe</string>
-    <string name="search_hint">Search for a Recipe or Profile</string>
+    <string name="app_name">TasteBudTales</string>
+    <string name="search_hint">" Search Recipe or Profile"</string>
     <string name="likes"> likes</string>
     <string name="home">home</string>
     <string name="search">search</string>
     <string name="profile">profile</string>
     <string name="tv_popular_recipes">Popular Recipes</string>
     <string name="tv_popular_profiles">Popular Profiles</string>
-    <string name="ingredients_list">2 teaspoons butter</string>
+    <string name="ingredients_list">1/2 pound ground beef</string>
     <string name="tv_list_of_ingredients">List of Ingredients</string>
-    <string name="PBJ_ingredients">2 teaspoons butter\n2 slices white bread\n2 teaspoons any flavor fruit jelly\n1 teaspoon peanut butter</string>
-    <string name="PBJ_instructions">1. Spread butter on one side of each slice of bread. Spread jelly on the unbuttered side of one slice of bread; spread peanut butter on the other unbuttered side.\n2. Place bread slices together, so peanut butter and jelly are in the middle.\n3. Cook on the preheated griddle until golden brown and heated through, about 4 minutes per side.</string>
-    <string name="recipe_review">If you\'re also allergic to peanut butter like me, use cookie butter! My wife says it even tastes better!</string>
-    <string name="PH_name">Patrick Ong</string>
-    <string name="PH_username">\@patrickOng</string>
-    <string name="PH_email">patrick_ong@dlsu.edu.ph</string>
-    <string name="PH_bio">Manifesting MOBDEVE high grades!</string>
-    <string name="PBJ_name">Peanut Butter and Jelly Sandwich</string>
-    <string name="PBJ_category">Bread</string>
+    <string name="list_ingredients">
+        1/2 pound ground beef\n
+        1/2 cup diced onions\n
+        1/2 cup diced bell peppers (any color)\n
+        1 cup cooked and drained pinto beans\n
+        1 teaspoon chili powder\n
+        1/2 teaspoon cumin\n
+        1/2 teaspoon paprika\n
+        Salt and pepper to taste\n
+        4 large flour tortillas\n
+        1 cup shredded cheddar cheese\n
+        Salsa (optional)\n
+        Sour cream (optional)\n
+        Chopped fresh cilantro (optional)
+    </string>
+    <string name="list_instructions">
+        Step 1\t
+        Cook the Ground Beef: In A skillet, over medium-high heat, cook the ground beef until browned and crumbled.
+        Drain any excess fat.
+        \n\nStep 2\t
+        Sauté Onions and Bell Peppers: In the same skillet, add the diced onions and bell peppers.
+        Sauté them for about 2-3 minutes or until they become tender.
+        \n\nStep 3\t
+        Add Beans and Spices: Add the cooked and drained pinto beans to the skillet with the onions and peppers.
+        Sprinkle in the chili powder, cumin, paprika, salt, and pepper.
+        Stir everything together and let it cook for an additional 2-3 minutes until the beans are heated through and the spices are well incorporated.
+        \n\nStep 4\t
+        Warm the Tortillas: Heat the flour tortillas in a dry skillet or microwave for about 20 seconds until they are warm and pliable.
+        \n\nStep 5\t
+        Assemble the Burritos: Lay out a tortilla and spoon a portion of the beef and bean mixture onto the center of the tortilla.
+        Sprinkle shredded cheddar cheese over the filling.
+        If you like, you can also add salsa, sour cream, or chopped cilantro for extra flavor.
+        \n\nStep 6\t
+        Fold and Roll: To fold the burrito, first fold in the sides, and then fold up the bottom, tucking it under the filling.
+        Roll it up from the bottom to create a burrito.
+        \n\nStep 7\t
+        Serve: Place the seam side down on a plate, and you can cut it in half diagonally for easy eating.
+        Serve your beef and bean burrito hot and enjoy!
+    </string>
+    <string name="recipe_review">
+        This tastes so good!
+        If you want to change it up a bit, you can also add guacamole, lettuce, hot sauce, or even change the meat!
+    </string>
 
     <array name="profile_recipe">
-        <item>Barack Obama</item>
-        <item>Gordon Ramsay</item>
-        <item>Selena Gomez</item>
-        <item>Jake Peralta</item>
-        <item>Natasha Romanoff</item>
-        <item>Beef Wellington</item>
-        <item>Nachos</item>
-        <item>Peanut Butter and Jelly Sandwich</item>
-        <item>Chili</item>
-        <item>Pepperoni Pizza</item>
+        <item>Juan Dela Cruz</item>
+        <item>Jane Doe</item>
+        <item>Maria Dela Cruz</item>
+        <item>John Doe</item>
+        <item>Jambalya</item>
+        <item>Burrito</item>
+        <item>Adobong Baboy</item>
+        <item>Tori Katsu</item>
     </array>
 </resources>

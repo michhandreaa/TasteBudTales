@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/pageHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="Add Ingredient"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/first_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/second_ingredient"
+        app:layout_constraintTop_toBottomOf="@+id/pageHeader">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ingredient_onion" />
+
+        <TextView
+            android:id="@+id/ingredientName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/dm_sans"
+            android:text="Onion"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/icon_minus" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:text="5" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/icon_add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/third_ingredient"
+        app:layout_constraintTop_toBottomOf="@id/first_ingredient">
+
+        <ImageView
+            android:id="@+id/imageView2213123"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ingredient_tomato" />
+
+        <TextView
+            android:id="@+id/ingredientName123232"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/dm_sans"
+            android:text="Tomato"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView63"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/icon_minus" />
+
+        <TextView
+            android:id="@+id/amount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:text="6" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/icon_add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/addIngredientBtn"
+        app:layout_constraintTop_toBottomOf="@id/second_ingredient">
+
+        <ImageView
+            android:id="@+id/imageView1233"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ingredient_egg" />
+
+        <TextView
+            android:id="@+id/ingredientName1123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/dm_sans"
+            android:text="Egg"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView93"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/icon_minus" />
+
+        <TextView
+            android:id="@+id/amount32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:text="7" />
+
+        <ImageView
+            android:id="@+id/imageView9667"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/icon_add" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addIngredientBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#23AA49"
+        android:fontFamily="@font/dm_sans"
+        android:text="Add Ingredient"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/saveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/third_ingredient" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#23AA49"
+        android:fontFamily="@font/dm_sans"
+        android:text="Save"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
