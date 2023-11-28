@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TasteBudTales</string>
+    <string name="signIn">SIGN IN</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="category">Category </string>
+    <string name="category1">Appetizer</string>
+    <string name="category2">Main Course</string>
+    <string name="category5">Dessert</string>
+
+    <string name="recipe">Recipes</string>
+    <string name="food_sample">Loading</string>
+
+    <string name="menuBtn1">Home</string>
+    <string name="menuBtn2">Search</string>
+    <string name="menuBtn3">Ingredient</string>
+    <string name="menuBtn4">Profile</string>
+
+
+
+</resources>
