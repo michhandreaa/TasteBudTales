@@ -1,7 +1,7 @@
-# iRecipe
+# TasteBudTales
 
 ## Description 
-This application is designed for food preparation. It makes use of Rapid API which allows its users to input a list of food essentials they currently have at home to determine the different recipes that they could make out of the available ingredients. This will help users think of different options of what they could cook out of what they currently have at home. The user is allowed to log in, and input their possible ingredients in a form then once submitted, the application will display the different recipes to select. Through the menu, there is also an option where the users have a history of their previously selected recipes, there will be a button right beside each recipe to give feedback on their cooking outcomes. 
+This application is crafted with the aim of assisting in meal creation. It leverages the capabilities of Rapid API, enabling users to enter a list of available food items in their pantry and discover various recipes they can whip up with those ingredients. This feature aids users in exploring diverse cooking options based on their current pantry stock. Users can log in, fill out a form with potential ingredients, and upon submission, the application presents a variety of recipes to choose from. Additionally, the menu includes a feature that allows users to view their past recipe selections. Each recipe in this history comes with a feedback button, enabling users to share their cooking results.
 
 ## Services / APIs 
 1. Database (SQLite)
