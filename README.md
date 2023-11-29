@@ -1,7 +1,7 @@
 # TasteBudTales
 
 ## Description 
-This application is crafted with the aim of assisting in meal creation. It leverages the capabilities of Rapid API, enabling users to enter a list of available food items in their pantry and discover various recipes they can whip up with those ingredients. This feature aids users in exploring diverse cooking options based on their current pantry stock. Users can log in, fill out a form with potential ingredients, and upon submission, the application presents a variety of recipes to choose from. Additionally, the menu includes a feature that allows users to view their past recipe selections. Each recipe in this history comes with a feedback button, enabling users to share their cooking results.
+This is an app that helps you look for recipes online using ingredients you have at home.. It leverages the capabilities of Rapid API, enabling users to enter a list of available food items in their pantry and discover various recipes they can whip up with those ingredients. This feature aids users in exploring diverse cooking options based on their current pantry stock. Users can log in, fill out a form with potential ingredients, and upon submission, the application presents a variety of recipes to choose from. Additionally, the menu includes a feature that allows users to view their past recipe selections. Each recipe in this history comes with a feedback button, enabling users to share their cooking results.
 
 ## Services / APIs 
 1. Database (SQLite)
