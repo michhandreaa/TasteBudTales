@@ -4,6 +4,7 @@ import com.mobdeve.bascomartinezvillanueva.tastebudtales.models.Recipe
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.models.Root
 import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface SpoonacularService {
@@ -29,5 +30,11 @@ interface SpoonacularService {
         @Query("number") number: Int,
         @Query("apiKey") apiKey: String
     ): Response<List<Recipe>>
+
+    @GET("/recipes/{id}/information")
+    suspend fun viewRecipeById(
+        @Path("id") id: Int,
+        @Query("apiKey") apiKey: String
+    ): Response<Recipe>
 
 }

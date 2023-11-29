@@ -26,7 +26,7 @@ data class Recipe(
     val sourceName: String,
     val pricePerServing: Double,
     val extendedIngredients: List<ExtendedIngredient>,
-    val id: Long,
+    val id: Int,
     val title: String,
     val readyInMinutes: Long,
     val servings: Long,

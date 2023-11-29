@@ -17,6 +17,18 @@
     <string name="recipe">Recipes</string>
     <string name="food_sample">Loading</string>
 
+    <string name="recipe_name">Loading</string>
+    <string name="recipe_likes">Loading</string>
+    <string name="recipe_category">Loading</string>
+
+    <string name="ingredients">Ingredients</string>
+    <string name="recipe_ingredients">Loading</string>
+
+    <string name="instructions">Instructions</string>
+    <string name="recipe_instruction">Loading</string>
+
+
+
     <string name="menuBtn1">Home</string>
     <string name="menuBtn2">Search</string>
     <string name="menuBtn3">Ingredient</string>

@@ -33,6 +33,8 @@
         <activity android:name=".ProfileActivity"/>
 
         <activity android:name=".FilteredCategoryActivity"/>
+        <activity android:name=".RecipeViewActivity"/>
+
 
         <meta-data
             android:name="preloaded_fonts"

@@ -8,11 +8,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.databinding.HomeSeeAllPerCategoriesRecipesBinding
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.databaseHelpers.RecipeAdapter
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.databaseHelpers.SpoonacularServiceSingleton
+import com.mobdeve.bascomartinezvillanueva.tastebudtales.models.Recipe
+import com.mobdeve.bascomartinezvillanueva.tastebudtales.databaseHelpers.RecipeClickListener
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class FilteredCategoryActivity : AppCompatActivity() {
+class FilteredCategoryActivity : AppCompatActivity(), RecipeClickListener {
     // List to hold home recipe data
     private lateinit var category: String
     private lateinit var recipeAdapter: RecipeAdapter // Add this line
@@ -35,6 +37,7 @@ class FilteredCategoryActivity : AppCompatActivity() {
         viewBinding.tvCategoryName.text = category
 
         recipeAdapter = RecipeAdapter(ArrayList()) // Add this line
+        recipeAdapter.setRecipeClickListener(this)
         viewBinding.recipesRecyclerView.layoutManager = LinearLayoutManager(this)
         viewBinding.recipesRecyclerView.adapter = recipeAdapter
 
@@ -53,6 +56,15 @@ class FilteredCategoryActivity : AppCompatActivity() {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
     }
+
+    // Implement the RecipeClickListener method
+    override fun onRecipeClick(recipe: Recipe) {
+        val recipeId = recipe.id
+        val intent = Intent(this, RecipeViewActivity::class.java)
+        intent.putExtra(IntentKeys.RECIPE_ID, recipeId)
+        startActivity(intent)
+    }
+
 
     private fun fetchAndDisplayRecipes() {
         CoroutineScope(Dispatchers.Main).launch {

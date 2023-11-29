@@ -9,8 +9,14 @@ import com.mobdeve.bascomartinezvillanueva.tastebudtales.R
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.databinding.ItemRecipeBinding
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.models.Recipe
 
+interface RecipeClickListener {
+    fun onRecipeClick(recipe: Recipe)
+}
+
 class RecipeAdapter(var recipes: List<Recipe>) :
     RecyclerView.Adapter<RecipeViewHolder>() {
+
+    private var recipeClickListener: RecipeClickListener? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
         val itemViewBinding =
@@ -18,8 +24,17 @@ class RecipeAdapter(var recipes: List<Recipe>) :
         return RecipeViewHolder(itemViewBinding)
     }
 
+    fun setRecipeClickListener(listener: RecipeClickListener) {
+        this.recipeClickListener = listener
+    }
+
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
-        holder.bindRecipe(recipes[position])
+        val recipe = recipes[position]
+        holder.bindRecipe(recipe)
+
+        holder.itemView.setOnClickListener {
+            recipeClickListener?.onRecipeClick(recipe)
+        }
     }
 
     override fun getItemCount(): Int {

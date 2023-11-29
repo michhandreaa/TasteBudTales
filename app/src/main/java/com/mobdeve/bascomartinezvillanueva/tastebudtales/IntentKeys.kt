@@ -9,7 +9,7 @@ object IntentKeys {
     const val CATEGORY_KEY = "category"
 
     // Keys for detailed recipe information
-    const val RECIPE_KEY = "recipe ID"
+    const val RECIPE_ID = "recipe id"
     const val RECIPE_NAME = "recipe name"
     const val RECIPE_INGREDIENTS = "recipe ingredients"
     const val RECIPE_CATEGORY = "recipe category"

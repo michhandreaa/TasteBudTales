@@ -9,14 +9,16 @@ import android.widget.AutoCompleteTextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.databaseHelpers.RecipeAdapter
+import com.mobdeve.bascomartinezvillanueva.tastebudtales.databaseHelpers.RecipeClickListener
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.databaseHelpers.SpoonacularServiceSingleton
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.databaseHelpers.UserDBHelper
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.databinding.SearchMainBinding
+import com.mobdeve.bascomartinezvillanueva.tastebudtales.models.Recipe
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class SearchPageActivity : AppCompatActivity() {
+class SearchPageActivity : AppCompatActivity(), RecipeClickListener {
 
     private lateinit var viewBinding: SearchMainBinding
     private lateinit var recipeAdapter: RecipeAdapter // Add this line
@@ -72,6 +74,17 @@ class SearchPageActivity : AppCompatActivity() {
         viewBinding.profileBtn.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
+
+        // Set the RecipeClickListener for the recipeAdapter
+        recipeAdapter.setRecipeClickListener(this)
+    }
+
+    // Implement the RecipeClickListener method
+    override fun onRecipeClick(recipe: Recipe) {
+        val recipeId = recipe.id
+        val intent = Intent(this, RecipeViewActivity::class.java)
+        intent.putExtra(IntentKeys.RECIPE_ID, recipeId)
+        startActivity(intent)
     }
 
     private fun searchRecipes(userInput: String) {

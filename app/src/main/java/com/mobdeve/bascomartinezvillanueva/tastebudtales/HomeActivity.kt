@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.databaseHelpers.RecipeAdapter
+import com.mobdeve.bascomartinezvillanueva.tastebudtales.databaseHelpers.RecipeClickListener
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.databinding.HomeHomepageBinding
 import com.mobdeve.bascomartinezvillanueva.tastebudtales.models.Recipe
 import kotlinx.coroutines.CoroutineScope
@@ -16,7 +17,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity(), RecipeClickListener {
 
     private val retrofit = Retrofit.Builder()
         .baseUrl("https://api.spoonacular.com/")
@@ -80,8 +81,20 @@ class HomeActivity : AppCompatActivity() {
         viewBinding.profileBtn.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
+
+        // Set RecipeClickListener for the RecipeAdapter
+        recipeAdapter.setRecipeClickListener(this)
+
     }
 
+    override fun onRecipeClick(recipe: Recipe) {
+        // Start RecipeViewActivity and pass the selected recipe
+        val recipeId = recipe.id
+        val intent = Intent(this, RecipeViewActivity::class.java)
+        intent.putExtra(IntentKeys.RECIPE_ID, recipeId)
+        startActivity(intent)
+
+    }
 
     private fun startFilteredCategoryActivity(category: String) {
         val intent = Intent(this, FilteredCategoryActivity::class.java)
